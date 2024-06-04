@@ -10,7 +10,7 @@ const Register = () => {
     const [formData, setFormData] = useState({
         user_name: '',
         user_password: '',
-        user_role: ''
+        user_role: 'User' // Default role set to User
     });
 
     useEffect(() => {
@@ -38,12 +38,6 @@ const Register = () => {
     const handleRegister = async (e) => {
         e.preventDefault();
         
-        // Check if the role is either "Admin" or "User"
-        if (!["Admin", "User"].includes(formData.user_role)) {
-            setError('Role must be either "Admin" or "User"');
-            return;
-        }
-
         try {
             const response = await axios.post('https://api-user-five.vercel.app/api/users/register', formData);
             if (response.status === 200) {
@@ -121,15 +115,17 @@ const Register = () => {
                         <label htmlFor="user_role" className="block text-sm font-medium text-gray-700">
                             Role:
                         </label>
-                        <input
-                            type="text"
+                        <select
                             name="user_role"
                             id="user_role"
                             value={formData.user_role}
                             onChange={handleInputChange}
                             required
                             className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                        />
+                        >
+                            <option value="User">User</option>
+                            <option value="Admin">Admin</option>
+                        </select>
                     </div>
                     {error && (
                         <div className="mb-4 text-red-500 text-sm">
