@@ -1,7 +1,6 @@
 
 # User Management Frontend
-
-This repository includes the frontend code for managing user authentication and profiles within the MERN (MongoDB, Express.js, React.js, Node.js) application. The frontend is responsible for handling user registration, login, and user management.
+This repository contains the frontend component of a MERN (MongoDB, Express.js, React.js, Node.js) application, designed to efficiently manage user data and provide a seamless user experience through a user-friendly interface.
 ## Functionality
 
 If you'd like to explore the backend, you're welcome to visit the following URL
