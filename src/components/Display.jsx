@@ -17,7 +17,6 @@ const Display = () => {
     useEffect(() => {
         const role = Cookies.get('role');
         setUserRole(role);
-        console.log(userRole);
     }, );
 
     return (

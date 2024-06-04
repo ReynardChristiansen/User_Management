@@ -49,7 +49,6 @@ const UpdateUser = () => {
                 }
             });
             if (response.status === 200) {
-                console.log('User updated successfully');
                 navigate('/AdminHome');
             } else {
                 console.error('Failed to update user:', response.status);

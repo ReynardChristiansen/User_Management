@@ -22,7 +22,6 @@ const UserDetailforUser = ({ user }) => {
             });
 
             if (response.status === 200) {
-                console.log("Delete Success");
                 setDeletes(prev => !prev);
             } else {
                 console.error('Failed to delete user');

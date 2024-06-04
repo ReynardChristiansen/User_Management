@@ -1,7 +1,6 @@
 import React from 'react';
 
 const AdminElement = ({ userRole, children }) => {
-    console.log(userRole);
     if (userRole == "Admin") {
         return (
             <>

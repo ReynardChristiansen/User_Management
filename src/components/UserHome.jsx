@@ -24,7 +24,6 @@ const UserHome = () => {
     useEffect(() => {
         const fetchUsers = async () => {
             const token = Cookies.get('token');
-            console.log(token);
             try {
                 const response = await axios.get('https://api-user-five.vercel.app/api/users', {
                     headers: {
