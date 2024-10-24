@@ -1,6 +1,8 @@
 
 # User Management Frontend
 This repository contains the frontend component of a MERN (MongoDB, Express.js, React.js, Node.js) application, designed to efficiently manage user data and provide a seamless user experience through a user-friendly interface.
+
+![image alt](https://github.com/ReynardChristiansen/User_Management/blob/main/Project.png?raw=true)
 ## Functionality
 
 If you'd like to explore the backend, you're welcome to visit the following URL
